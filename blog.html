@@ -1,13 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog</title>
+    <title>B7A5-geometry-genius-assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+
+        }
+    </style>
 </head>
+
 <body>
-    <h1>blog</h1>
-    
+    <header class="bg-blue-100 w-[95%] px-5 mt-12 mx-auto rounded-md">
+        <div class="navbar bg-blue-100 ">
+            <div class="flex-1">
+                <div>
+                    <h1 class="font-bold text-5xl">Interactive</h1>
+                    <h4 class="font-semibold text-2xl">Geometry Genius</h4>
+                </div>
+            </div>
+            <div class="flex-none">
+                <button id="geometrybtn"
+                    class="btn border-none px-6 bg-blue-500 hover:bg-blue-700 text-white">Geometry</button>
+            </div>
+        </div>
+    </header>
+    <section class="bg-white-100 w-[95%] px-5 my-12 mx-auto rounded-md">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- que -1  -->
+            <div class="card bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">What is DOM and what is the purpose of DOM?</h2>
+                    <p>The Document Object Model (DOM) is a programming interface for web documents.
+                        The HTML DOM contains three parts: <br>
+                        Document: This is the HTML Document that we create <br>
+                        Object: All the Elements and Attributes present in the HTML document come under Objects (Ex:
+                        "<"h1">"<'p'><'img'>etc) <br>Model: The Tree structure of the elements is called a Model <br>The main Purpose of dom is create an Interective website , Where when user clicked a button <br> or hover or scroll or type on keyboard it works . <br> It is a programming interface that allows us to create, change, or remove elementsfrom a <br> website document.The Document Object Model is significant in speeding up web page loads<p/>
+
+                </div>
+            </div>
+
+            <!-- que-2  -->
+            <div class="card bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">How will you select HTML elements using DOM? Name the DOM methods.</h2>
+                    <p>Usually We select HTML element using 5 methods,here the Name the DOM methods <br>getElementsByTagName() <br>getElementsByClassName() <br>getElementById() <br>querySelector() <br>querySelectorAll() <br></p>
+
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">What is event bubble?</h2>
+                    <p>Event bubbling is a way of event propagation in the HTML DOM. It relates to the order in which
+                        events are propagated in nested elements.When an event happens on an element, it first runs the handlers on it, then on its parent, thenall the way up on other ancestors. To stop bubbling use stoppropagation, we can delegation bubbling to parent node. </p>
+
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title">What is a callback function and why will you use it?</h2>
+                    <p>When you want one function to execute only after another function has completed its execution, we use callback functions in JavaScript.A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action. The benefit of using a callback function is that we can wait for the result of a previous function call and then execute another function call. It needs to pass as a parameter to other functions to make a function callback
+                         </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.getElementById('geometrybtn').addEventListener('click', function () {
+            window.location.href = './index.html'
+        })
+    </script>
 </body>
+
 </html>
