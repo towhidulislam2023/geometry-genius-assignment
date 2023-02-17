@@ -1,16 +1,22 @@
 document.getElementById('blogBtn').addEventListener('click', function () {
     window.location.href='../blog.html'
 })
-function changeBgRandomColor(cardId) {
-    document.getElementById(cardId).addEventListener('mouseenter', function () {
-        const randomColor = Math.floor(Math.random()*16777215).toString(16);
-        document.getElementById(cardId).style.backgroundColor = '#' + randomColor;
-        
-    })
-    
-}
 
+// call function for card bg change
+
+// triangle
 changeBgRandomColor('triangleCard');
+// rectangleCard
+changeBgRandomColor('rectangleCard');
+// ParallelogramCard
+changeBgRandomColor('ParallelogramCard');
+// rhombusCard
+changeBgRandomColor('rhombusCard');
+// pentagonCard
+changeBgRandomColor('pentagonCard');
+// ellipseCard
+changeBgRandomColor('ellipseCard');
+
 
 
 
@@ -73,7 +79,6 @@ document.getElementById('rectangleBtn').addEventListener('click', function () {
     const area = parseFloat((width * length).toFixed(2)) ;
      setValueInTable(count,name,area)
 })
-console.log(count);
 
 // parallelogram
 
@@ -87,7 +92,6 @@ document.getElementById('parallelogrameditSaveValue').addEventListener('click', 
     if (isNaN(uIparallelogramB)) {
         alert('input a Number');
         return;
-        
     }
     else if (uIparallelogramB < 0) {
         alert('Positive Number Only')

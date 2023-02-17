@@ -14,6 +14,8 @@ function getTextFromTextFeild(textFeildId) {
     return textFeildvalue;
     
 }
+
+
 function getValueFromTextFeild(textFeildId) {
     const textFeildElement = document.getElementById(textFeildId);
     const textFeildvalueAsString = textFeildElement.innerText;
@@ -28,6 +30,8 @@ function setTextFeildValue(textFeildId, value) {
     textFeildvalue.innerText = value;
 }
 
+
+
 function setValueInTable(count,Pname,area) {
     const tbody = document.getElementById('tableBody');
     const tr = document.createElement('tr');
@@ -35,7 +39,7 @@ function setValueInTable(count,Pname,area) {
     <td>${count}</td>
     <td>${Pname}</td>
     <td>${area} cm<sup>2</sup></suP></td>
-    <td><button class="btn btn-secondary   bg-blue-500 border-none hover:bg-blue-600">Button</button></td>
+    <td><button class="  px-3 py-1  rounded-md  text-white bg-blue-500 border-none hover:bg-blue-600">Covert <span>m<sup>2</sup></span> </suP></button></td>
     
     `
     tbody.appendChild(tr)
@@ -58,4 +62,13 @@ function hideAndDisplay(targetEementid,btnId,) {
         }
 
     })
+}
+
+function changeBgRandomColor(cardId) {
+    document.getElementById(cardId).addEventListener('mouseenter', function () {
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        document.getElementById(cardId).style.backgroundColor = '#' + randomColor;
+        
+    })
+    
 }
