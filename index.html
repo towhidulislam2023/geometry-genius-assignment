@@ -44,21 +44,21 @@
                           <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Triangle</h2>
+                          <h2 id="triangleHeading" class="card-title">Triangle</h2>
                           <p class="text-base flex gap-2">Area (A)= <span>0.5</span>
                             <span><i class="fa-solid fa-xmark"></i></span>
                             <span>b</span>
                             <span><i class="fa-solid fa-xmark"></i></span>
                             <span>h</span></p>
                             <div class=" flex gap-3 my-5">
-                                <input class="w-16 bg-gray-300 px-4 rounded-sm" type="text" placeholder="b">
+                                <input id="inputFeildForB" class="w-16 bg-gray-300 px-4 rounded-sm" type="text" placeholder="b">
                                 <span class="font-black">cm</span>
-                                <input class="w-16 bg-gray-300 px-4 rounded-sm" type="text" placeholder="h">
+                                <input id="inputFeildForH" class="w-16 bg-gray-300 px-4 rounded-sm" type="text" placeholder="h">
                                 <span class="font-black">cm</span>
                             </div>
 
                           <div class="card-actions">
-                            <button class="btn btn-wide bg-blue-500 border-none hover:bg-blue-600">Calculate </button>
+                            <button id="triangleBtn" class="btn btn-wide bg-blue-500 border-none hover:bg-blue-600">Calculate </button>
                           </div>
                         </div>
                       </div>
@@ -68,20 +68,20 @@
                           <img src="./images/rectangle.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Rectangle</h2>
+                          <h2 id="rectangleHeading" class="card-title">Rectangle</h2>
                           <p class="text-base flex gap-2">Area (A)=
                             <span>w</span>
                             <span><i class="fa-solid fa-xmark"></i></span>
                             <span>l</span></p>
                             <div class=" flex gap-3 my-5">
-                                <input class="w-16 bg-gray-300 px-4 rounded-sm" type="text" placeholder="w">
+                                <input id="inputFeildForWidth" class="w-16 bg-gray-300 px-4 rounded-sm" type="text" placeholder="w">
                                 <span class="font-black">cm</span>
-                                <input class="w-16 bg-gray-300 px-4 rounded-sm" type="text" placeholder="l">
+                                <input id="inputFeildForLength" class="w-16 bg-gray-300 px-4 rounded-sm" type="text" placeholder="l">
                                 <span class="font-black">cm</span>
                             </div>
 
                           <div class="card-actions">
-                            <button class="btn btn-wide bg-blue-500 border-none hover:bg-blue-600">Calculate </button>
+                            <button id="rectangleBtn" class="btn btn-wide bg-blue-500 border-none hover:bg-blue-600">Calculate </button>
                           </div>
                         </div>
                       </div>
@@ -92,11 +92,25 @@
                         </figure>
                         <div class="card-body items-center text-center">
                           <h2 class="card-title">Parallelogram</h2>
-                          <p class="text-base flex gap-2">Area (A)=
+                          <div class="mb-6">
+                          <p class="">Area (A)=
                             <span>b</span>
                             <span><i class="fa-solid fa-xmark"></i></span>
                             <span>h</span></p>
-                         <p class="h-fit">b=<span>10</span>cm,h=<span>12</span>cm</p>
+                          </div>
+                            <div class="flex">
+                         <p class="h-fit">b=<span>10</span>cm,h=<span>12</span>cm</p>&nbsp;<button id="parallelogrameditOnBtn"><i class="fa-solid fa-pen-to-square"></i></button>
+                        </div>
+
+                        <div class="h-16">
+                         <div id="parallelogrameditBtn"class=" hidden my-5 ">
+                          <input id="inputFeildForWidth" class="w-16 bg-gray-300 px-4 rounded-sm" type="text" placeholder="w">
+                          <span class="font-black">cm</span>
+                          <input id="inputFeildForLength" class="w-16 bg-gray-300 px-4 rounded-sm" type="text" placeholder="l">
+                          <span class="font-black">cm</span>
+                          <span> <input type="checkbox" name="" id="parallelogrameditSaveValue"></span>
+                      </div>
+                    </div>
                           <div class="card-actions">
                             <button class="btn btn-wide bg-blue-500 border-none hover:bg-blue-600">Calculate </button>
                           </div>
@@ -159,10 +173,10 @@
                     <!-- table  -->
                     <div class="overflow-x-auto">
                         <table class="table w-full">
-                          <tbody>
+                          <tbody id="tableBody">
                             <!-- row 1 -->
-                            <tr>
-                              <!-- <th>1</th>
+                            <!-- <tr>
+                              <td>1</td>
                               <td>Cy Ganderton</td>
                               <td>Qual</td>
                               <td>Blue</td>
@@ -178,6 +192,8 @@
                 </div>
             </div>
         </section>
+<h1>2 <sup>3</sup></h1>
+
     </main>
 
 
