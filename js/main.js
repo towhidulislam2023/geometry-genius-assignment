@@ -1,1 +1,3 @@
-console.log('Connected main');
+document.getElementById('blogBtn').addEventListener('click', function () {
+    window.location.href='../blog.html'
+ })
