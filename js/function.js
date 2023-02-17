@@ -14,6 +14,19 @@ function getTextFromTextFeild(textFeildId) {
     return textFeildvalue;
     
 }
+function getValueFromTextFeild(textFeildId) {
+    const textFeildElement = document.getElementById(textFeildId);
+    const textFeildvalueAsString = textFeildElement.innerText;
+    const textFeildvalue = parseFloat(textFeildvalueAsString);
+    return textFeildvalue;
+    
+}
+
+function setTextFeildValue(textFeildId, value) {
+    const textFeildElement = document.getElementById(textFeildId);
+    const textFeildvalue = textFeildElement.innerText;
+    textFeildvalue.innerText = value;
+}
 
 function setValueInTable(count,Pname,area) {
     const tbody = document.getElementById('tableBody');
@@ -27,6 +40,9 @@ function setValueInTable(count,Pname,area) {
     `
     tbody.appendChild(tr)
 }
+
+
+
 
 function hideAndDisplay(targetEementid,btnId,) {
     const element = document.getElementById(targetEementid);
